@@ -1,0 +1,5 @@
+applications:
+  - name: cachetest1
+    random-route: true
+    memory: 256M
+    command: bundle exec rake db:setup && bundle exec rails s -p $PORT
